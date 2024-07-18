@@ -34,7 +34,7 @@ nav{
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: #4070f4;
+  background: #000000;
   padding: 13px 0;
 }
 nav .navbar{
@@ -47,7 +47,7 @@ nav .navbar{
 nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
-  color: #4070f4;
+  color: #76c044;
 }
 nav.sticky .navbar .logo a{
   color: #fff;
@@ -68,13 +68,13 @@ nav .navbar .menu li{
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover{
-  color: #4070f4;
+  color: #76c044;
 }
 nav.sticky .menu a{
   color: #FFF;
 }
 nav.sticky .menu a:hover{
-  color: #0E2431;
+  color: #76c044;
 }
 .navbar .media-icons a{
   color: #4070f4;
@@ -507,4 +507,8 @@ footer .text span a:hover{
     font-size: 50px;
     color: #4070f4;
   }
+}
+
+#navlogo{
+  max-width: 7%;
 }
