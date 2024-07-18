@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Portfolio Website HTML CSS| CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Portfolio.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">We are GameDev Heroes</div>
+          <div class="text-three">It's all an illusion.</div>
+          <div class="text-four">Don't just dream it, Built it !</div>
+        </div>
+        <div class="button">
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Us</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="Images\Game Dev-1.png" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">"From Gamers to Game Changers"</div>
+            <p>
+              Game Dev Heroes Community is part of the Herald DevCorps Communities at Herald College Kathmandu, 
+              which was established on August 6, 2019. In this community, you will find people who create, play, 
+              research, and develop games related to gaming. Our aim is to develop our own games by sharing gaming 
+              knowledge and ideas among ourselves. Our goal is to educate ourselves and others to the best of our ability. 
+              The community focuses on investigating and learning about the structure, steps, and abilities required for a 
+              career in game creation. Students can join this community if they are inquisitive about games and their 
+              platforms, interested in the gaming industry, or both.
+            </p>
+            <!-- <div class="button">
+              <button>Download CV</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+
+
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>Our Objectives</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <h1>Skills Reflects Our Knowledge</h1>
+            <p>Game Dev Heroes Community specializes in preparing students for entry-level positions in the video 
+              game industry. We focus on utilizing different game engines to develop practical skills in game development.</p>
+              <p>Objectives of our community
+                Game Dev Heroes Community has several objectives. The first objective is to provide students with the 
+                opportunity to learn, explore, and expand their knowledge of game development. By participating in the community's
+                 programs and activities, students can gain practical experience in game development and learn how to use different game
+                  engines and programming languages</p>
+            <div class="experience">
+              <div class="num">3</div>
+              <div class="exp">
+                Years Of <br />
+                Experience
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">Programming Language</div>
+              <span>Created to provide students with a basic understanding of C# and C++ programming as well as additional Programing languages</span>
+            </div>
+            <div class="box">
+              <div class="topic">Game Concepts</div>
+              <span>Learn about principles and techniques of interactive 2D and 3D game development</span>
+            </div>
+            <div class="box">
+              <div class="topic">Self-Development and idea promotion</div>
+              <span>A platform for HCK students for individual development and promoting their ideas.</span>
+
+            </div>
+            <div class="box">
+              <div class="topic">Research and Development</div>
+              <span>Idea generation, research & development and prototype development</span>
+
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Services Section Start -->
+    <section class="services" id="services">
+      <div class="content">
+        <div class="title"><span>Services</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="topic">Game Engine</div>
+          <p>Learn about different Game engines </p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-cube"></i>
+            </div>
+            <div class="topic">Character Modeling</div>
+          <p> Learn about 3D such as Blender, SketchUp, and 2D Modelling such as Photoshop </p>  
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="topic">Game Design</div>
+            <p>Create your own little world</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--Members section start-->
+<style>
+    .member-block{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      gap: 10px;
+      margin: 2rem 10px;
+    }
+    .member-block .box img {
+        height: 15rem;
+        width: auto;
+
+    }
+    .member-block div span{
+        margin-top: 1rem;
+        display: block;
+        text-align: center;
+        font-size: 18px; 
+    }
+    .member-block .box .topic{
+      color: #4070f4;
+      font-weight: 500;
+    }
+</style>
+<section class="skills">
+  <div class="content">
+    <div class="title"><span>Steering Members</span></div>
+    <div class="member-block">
+        <div class="box">
+            <img src="./Images/1000020873.jpg" >
+            <div class="topic">Sneha Bega</div>
+            <span>Marketing Lead</span>
+        </div>
+        <div class="box">
+            <img src="./Images/ranju.jpg" >
+            <div class="topic">Ranjana Mahato</div>
+            <span>Documentation Lead</span>
+        </div>
+        <div class="box">
+            <img src="./Images/nabin.jpg" >
+            <div class="topic">Nabin Tako</div>
+            <span>Development Lead</span>
+        </div>
+        <div class="box">
+          <img src="./Images/Nitesh Chaudhary.jpg" >
+          <div class="topic">Nitesh Chaudhary</div>
+          <span>Research Lead</span>
+        </div>
+        <div class="box">
+          <img src="./Images/Aaryan Shrestha.jpg" >
+          <div class="topic">Aaryan Shrestha</div>
+          <span>Design Lead</span>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="services">
+  <div class="content">
+    <div class="title"><span>Other Members</span></div>
+    <div class="member-block">
+      <div class="box">
+          <img src="./Images/Aayushmaa.jpg" >
+          <div class="topic">Aayushma Poudel</div>
+      </div>
+      <div class="box">
+          <img src="./Images/Ananta.jpeg" >
+          <div class="topic">Ananta Gurung</div>
+      </div>
+      <div class="box">
+          <img src="./Images/Anwesh.jpg" >
+          <div class="topic">Anwesh Rawat</div>
+      </div>
+      <div class="box">
+        <img src="./Images/Atul.jpeg" >
+        <div class="topic">Atul Adhikari</div>
+      </div>
+      <div class="box">
+        <img src="./Images/Bibhuti.jpg" >
+        <div class="topic">Bibhuti Koirala</div>
+      </div>
+      <div class="box">
+        <img src="./Images/diparshan.jpg" >
+        <div class="topic">Diparshan Chauhan</div>
+      </div>
+      <div class="box">
+        <img src="./Images/Dipendra.jpeg" >
+        <div class="topic">Dipendra Roka</div>
+      </div>
+      <div class="box">
+        <img src="./Images/nemahang.jpg" >
+        <div class="topic">Nemahang Rai</div>
+      </div>
+      <div class="box">
+        <img src="./Images/prashant.jpg" >
+        <div class="topic">Prashant Khatri</div>
+      </div>
+      <div class="box">
+        <img src="./Images/prashna.jpg" >
+        <div class="topic">Prashna Shrestha</div>
+      </div>
+      <div class="box">
+        <img src="./Images/Shamir.jfif" >
+        <div class="topic">Shamir Maharjan</div>
+      </div>
+      <div class="box">
+        <img src="./Images/.jpg" >
+        <div class="topic">Shijal Shakya</div>
+      </div>
+      <div class="box">
+        <img src="./Images/suraj.jpg" >
+        <div class="topic">Suraj Tamang</div>
+      </div>
+  </div>
+  </div>
+</section>
+
+    
+
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact us</span></div>
+        <div class="text">
+          <div class="topic">Have Any Project?</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.</p>
+          <div class="button">
+            <button>Let's Chat</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>Created By <a href="#">CodingLab</a> | &#169; 2021 All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  <style>
+    .boxes {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .box {
+      background-color: #d6e7f4a5;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .topic {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</html>
