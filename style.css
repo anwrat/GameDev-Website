@@ -34,7 +34,7 @@ nav{
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: #000000;
+  background: rgb(128,128,128,0.7);
   padding: 13px 0;
 }
 nav .navbar{
@@ -134,26 +134,6 @@ nav.sticky .menu-btn{
   font-size: 23px;
   margin: 5px 0;
   color: #0E2431;
-}
-.home .button{
-  margin: 14px 0;
-}
-.home .button button{
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 25px;
-  font-weight: 400;
-  background: #76c044;
-  color: #fff;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: all 0.4s ease;
-}
-.home .button button:hover{
-  border-color: #76c044;
-  background-color: #fff;
-  color: #76c044;
 }
 
 /* About Section Styling */
