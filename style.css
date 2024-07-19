@@ -34,7 +34,7 @@ nav{
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: rgb(128,128,128,0.7);
+  background: rgb(255, 255, 255,0.8);
   padding: 13px 0;
 }
 nav .navbar{
@@ -71,7 +71,7 @@ nav .navbar .menu li{
   color: #76c044;
 }
 nav.sticky .menu a{
-  color: #FFF;
+  color: #000000;
 }
 nav.sticky .menu a:hover{
   color: #76c044;
@@ -330,11 +330,6 @@ section .button button:hover{
   margin: 0 auto;
   padding: 30px 0;
 }
-.contact .text{
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
 
 /* Footer CSS */
 footer{
@@ -361,7 +356,7 @@ footer .text span a:hover{
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #4070f4;
+  background: #76c044;
   padding: 7px 12px;;
   font-size: 18px;
   border-radius: 6px;
@@ -480,5 +475,5 @@ footer .text span a:hover{
 }
 
 #navlogo{
-  max-width: 7%;
+  max-width: 17%;
 }
