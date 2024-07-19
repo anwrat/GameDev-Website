@@ -78,12 +78,12 @@ nav.sticky .menu a:hover{
   color: #76c044;
 }
 .navbar .media-icons a{
-  color: #4070f4;
+  color: #76c044;
   font-size: 18px;
   margin: 0 6px;
 }
 nav.sticky .media-icons a{
-  color: #FFF;
+  color: #000000;
 }
 
 /* Side Navigation Menu Button CSS */
