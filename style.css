@@ -26,6 +26,7 @@
 }
 /* navbar styling */
 nav{
+  background: rgb(255, 255, 255,0.1);
   position: fixed;
   width: 100%;
   padding: 20px 0;
@@ -108,14 +109,31 @@ nav.sticky .menu-btn{
 }
 
 /* home section styling */
+@keyframes changebg{
+  0% {background-image: url("./Images/leaders.jpg");}
+  25% {background-image: url("./Images/game verse.jpg");}
+  50% {background-image: url("./Images/hike.JPG");} /*We are using step-end animation timing so we dont include 100%*/
+}
 .home{
   height: 100vh;
   width: 100%;
-  background: url("Images\Game Dev-2.png") no-repeat;
+  font-family: 'Ubuntu', sans-serif;
+  position:relative;
+  z-index: 1;
+}
+.home .bg{
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  height: 100vh;
+  top: 0%;
+  position: absolute;
+  z-index: -1;
+  animation-name: changebg;
+  animation-duration: 30s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite;
+  opacity: 0.4;
 }
 .home .home-content{
   text-align: center;
