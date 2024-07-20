@@ -176,9 +176,9 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #0E2431;
-  font-size: 30px;
-  font-weight: 600;
+  color: #76c044;
+  font-size: 50px;
+  font-weight: 1000;
   position: relative;
   padding-bottom: 8px;
 }
@@ -242,9 +242,9 @@ section .button button:hover{
 }
 
  /* My Skills CSS */
- .skills{
+ /* .skills{
    background: #F0F8FF;
- }
+ } */
  .skills .content{
    padding: 40px 0;
  }
@@ -312,13 +312,13 @@ section .button button:hover{
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover{
-  background: #4070f4;
+  background: #76c044;
   color: #fff;
 }
 .services .boxes .box .icon{
   height: 50px;
   width: 50px;
-  background: #4070f4;
+  background: #76c044;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -329,7 +329,7 @@ section .button button:hover{
 }
 .boxes .box:hover .icon{
   background-color: #fff;
-  color: #4070f4;
+  color: #76c044;
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p{
