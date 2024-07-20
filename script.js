@@ -44,4 +44,14 @@ for (var i = 0; i < navLinks.length; i++) {
   });
 }
 
+//Video playing using js
+document.getElementById("video").addEventListener("mouseover", function() {
+	this.play();
+});
+
+document.getElementById("video").addEventListener("mouseleave", function() {
+	this.pause();
+  this.currentTime=0;
+});
+
 
