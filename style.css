@@ -91,13 +91,13 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn{
-  color: #4070f4;
+  color: #76c044;
 }
 nav.sticky .menu-btn{
-  color: #FFF;
+  color: #76c044;
 }
 .navbar .menu .menu-btn{
-  color: #fff;
+  color: #76c044;
 }
 
 /* home section styling */
@@ -344,11 +344,13 @@ section .button button:hover{
   padding: 30px 0;
 }
 .contact .media-icons a{
-  color: #76c044;
+  color: #FFFFFF;
   font-size: 18px;
   margin: 0 6px;
 }
-
+#bottomlogo img{
+  width:30%;
+}
 /* Footer CSS */
 footer{
   background: #323232;
@@ -422,7 +424,7 @@ footer .text span a:hover{
     position: fixed;
     left: -100%;
     top: 0;
-    background: #0E2431;
+    background: #3c3d3d;
     height: 100vh;
     max-width: 400px;
     width: 100%;
@@ -441,7 +443,7 @@ footer .text span a:hover{
     margin: 10px 0;
   }
   nav.sticky .menu a:hover{
-    color: #4070f4;
+    color: #76c044;
   }
   nav .navbar .media-icons{
     display: none;
