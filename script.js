@@ -45,13 +45,14 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 
 //Video playing using js
-document.getElementById("video").addEventListener("mouseover", function() {
-	this.play();
+let clip=document.getElementById("video");
+document.getElementById("services").addEventListener("mouseover", function() {
+	clip.play();
 });
 
-document.getElementById("video").addEventListener("mouseleave", function() {
-	this.pause();
-  this.currentTime=0;
+document.getElementById("services").addEventListener("mouseleave", function() {
+	clip.pause();
+  clip.currentTime=0;
 });
 
 

@@ -345,7 +345,7 @@ section .button button:hover{
 }
 /* Contact Me CSS */
 .contact{
-  background: #F0F8FF;
+  background: grey;
 }
 .contact .content{
   margin: 0 auto;
@@ -354,7 +354,7 @@ section .button button:hover{
 
 /* Footer CSS */
 footer{
-  background: #4070f4;
+  background: #000000;
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
