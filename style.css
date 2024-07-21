@@ -26,7 +26,7 @@
 }
 /* navbar styling */
 nav{
-  background: rgb(255, 255, 255,0.1);
+  background: #3c3d3d;
   position: fixed;
   width: 100%;
   padding: 20px 0;
@@ -35,7 +35,7 @@ nav{
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: rgb(255, 255, 255,0.8);
+  background: #3c3d3d;
   padding: 13px 0;
 }
 nav .navbar{
@@ -64,7 +64,7 @@ nav .navbar .menu li{
 .navbar .menu a{
   font-size: 18px;
   font-weight: 500;
-  color: #0E2431;
+  color: #FFFFFF;
   padding: 6px 0;
   transition: all 0.4s ease;
 }
@@ -72,18 +72,10 @@ nav .navbar .menu li{
   color: #76c044;
 }
 nav.sticky .menu a{
-  color: #000000;
+  color: #FFFFFF;
 }
 nav.sticky .menu a:hover{
   color: #76c044;
-}
-.navbar .media-icons a{
-  color: #76c044;
-  font-size: 18px;
-  margin: 0 6px;
-}
-nav.sticky .media-icons a{
-  color: #000000;
 }
 
 /* Side Navigation Menu Button CSS */
@@ -345,16 +337,21 @@ section .button button:hover{
 }
 /* Contact Me CSS */
 .contact{
-  background: grey;
+  background: #3c3d3d;
 }
 .contact .content{
   margin: 0 auto;
   padding: 30px 0;
 }
+.contact .media-icons a{
+  color: #76c044;
+  font-size: 18px;
+  margin: 0 6px;
+}
 
 /* Footer CSS */
 footer{
-  background: #000000;
+  background: #323232;
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
