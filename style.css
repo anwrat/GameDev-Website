@@ -535,3 +535,25 @@ footer .text span a:hover{
   font-weight: bold;
   margin-bottom: 10px;
 }
+.member-block{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 2rem 10px;
+}
+.member-block .box img {
+    height: 15rem;
+    width: auto;
+
+}
+.member-block div span{
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 18px; 
+}
+.member-block .box .topic{
+  color: #4070f4;
+  font-weight: 500;
+}
