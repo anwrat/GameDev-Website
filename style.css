@@ -163,10 +163,17 @@ section .content{
   justify-content: space-between;
   align-items: center;
 }
-section .title{
+section .title,.subtitle{
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+}
+section .subtitle span{
+  color:#3c3d3d;
+  font-size: 50px;
+  font-weight: 1000;
+  position: relative;
+  padding-bottom: 8px;
 }
 section .title span{
   color: #76c044;
