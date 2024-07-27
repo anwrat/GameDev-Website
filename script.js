@@ -55,4 +55,15 @@ document.getElementById("services").addEventListener("mouseleave", function() {
   clip.currentTime=0;
 });
 
+//For Event Video
+let clip2=document.getElementById("evideo");
+document.getElementById("Events").addEventListener("mouseover", function() {
+	clip2.play();
+});
+
+document.getElementById("Events").addEventListener("mouseleave", function() {
+	clip2.pause();
+  clip2.currentTime=0;
+});
+
 
