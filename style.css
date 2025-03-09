@@ -104,7 +104,7 @@ nav.sticky .menu-btn{
 @keyframes changebg{
   0% {background-image: url("./Images/leaders.jpg");}
   25% {background-image: url("./Images/game verse.jpg");}
-  50% {background-image: url("./Images/hike.JPG");} /*We are using step-end animation timing so we dont include 100%*/
+  50% {background-image: url("./Images/shivapuri hike/hike.JPG");} /*We are using step-end animation timing so we dont include 100%*/
 }
 .home{
   height: 100vh;
