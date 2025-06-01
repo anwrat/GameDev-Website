@@ -542,3 +542,72 @@ footer .text span a:hover{
   font-weight: bold;
   margin-bottom: 10px;
 }
+/*For member section*/
+.member-block{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 2rem 10px;
+}
+.member-block .box img {
+    height: 15rem;
+    width: auto;
+
+}
+.member-block div span{
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 18px; 
+}
+.member-block .box .topic{
+  color: #76c044;
+  font-weight: 500;
+}
+.members-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+.members-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*For scrolling members sections*/
+.scroll-wrapper {
+  overflow-x: auto; /* Enable manual scrolling */
+  overflow-y: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.scroll-wrapper .member-block {
+  display: flex;
+  width: max-content;
+  /* animation: scrollLeft 20s linear infinite; */
+}
+
+/*Pause on hover*/
+.scroll-wrapper:hover .member-block {
+  animation-play-state: paused;
+}
+
+/* @keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
+
+.scroll-wrapper.dragging {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+.scroll-wrapper {
+  cursor: grab;
+}
