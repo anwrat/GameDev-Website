@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 10px;
@@ -101,33 +105,58 @@ nav.sticky .menu-btn{
 }
 
 /* home section styling */
-@keyframes changebg{
-  0% {background-image: url("./Images/leaders.jpg");}
-  25% {background-image: url("./Images/game verse.jpg");}
-  50% {background-image: url("./Images/shivapuri hike/hike.JPG");} /*We are using step-end animation timing so we dont include 100%*/
-}
-.home{
+.home {
   height: 100vh;
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
-  position:relative;
+  position: relative;
+  overflow: hidden;
   z-index: 1;
 }
-.home .bg{
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+
+.bg-slider {
+  position: absolute;
   width: 100%;
   height: 100vh;
-  top: 0%;
-  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  animation: slide 18s infinite;
   z-index: -1;
-  animation-name: changebg;
-  animation-duration: 30s;
-  animation-timing-function: step-end;
-  animation-iteration-count: infinite;
-  opacity: 0.4;
 }
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* adjust for dimness */
+  animation: fade 18s infinite;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 6s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 12s;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  33.33% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-200%); }
+  100%  { transform: translateX(0); }
+}
+
+@keyframes fade {
+  0%, 100%   { opacity: 0.2; }
+  16.66%, 49.99% { opacity: 0.5; }
+  50%, 83.33% { opacity: 0.2; }
+}
+
+
 .home .home-content{
   text-align: center;
   margin:auto;
@@ -348,22 +377,43 @@ section .button button:hover{
   background: #3c3d3d;
 }
 .contact .content{
+  display: flex;
+  flex-direction: row;
   margin: 0 auto;
   padding: 30px 0;
 }
 #contact .media-icons{
+  display: flex;
+  flex-direction: column;
   margin: auto;
 }
+
+.contact .media-icons h1{
+  color: #FFFFFF;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  padding-bottom: 10px;
+}
+
 .contact .media-icons a{
   display: block;
   color: #FFFFFF;
   font-size: 30px;
 }
+
+.contact .content .media-icons .media-media{
+  color:#FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
 #contact .content .logo{
-  width:20%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
 }
 #contact .content .college{
   width:20%;
@@ -547,9 +597,34 @@ footer .text span a:hover{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 30px;
   margin: 2rem 10px;
 }
+.event-block{
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-evenly;
+  gap: 50px;
+  margin: 2rem 10px;
+}
+
+.event-block .box img {
+    height: 15rem;
+    width: auto;
+
+}
+.event-block div span{
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 18px; 
+}
+.event-block .box .topic{
+  color: #76c044;
+  font-weight: 500;
+}
+
+
 .member-block .box img {
     height: 15rem;
     width: auto;
